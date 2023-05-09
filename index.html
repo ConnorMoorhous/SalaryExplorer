@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ headContent() }}
+    {{ bootstrapLib() }}
+    <script src="js/navInput.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="header">
+      <div class="title">
+        <h1>Salary Explorer</h1>
+        <div id="settings"> 
+          <img src="img/settings.png">
+          <div class="dropdown">
+            <div id="controls">
+              {{dateSelect}}
+              {{titleSelect}}
+              {{educationSelect}}
+              {{genderSelect}}
+              {{raceSelect}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="nav">
+        <label class="nav-btn">Overview<input type="radio" name="nav" value="overview" checked>
+        </label>
+          <label class="nav-btn">Cities<input type="radio" name="nav" value="city">
+          </label>
+          <label class="nav-btn">States<input type="radio" name="nav" value="state">
+          </label>
+      </div>
+    </div>
+    {{ content }}
+    <footer>
+    </footer>
+  </body>
+</html>

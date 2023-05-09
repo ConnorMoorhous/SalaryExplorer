@@ -1,0 +1,254 @@
+@import url("https://use.typekit.net/pag5apl.css");
+
+* {
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+body {
+    background-color: #F6F1F1;
+    padding: 4rem 5rem;
+    
+    font-family: articulat-cf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    margin: inherit;
+    font-family: "articulat-heavy-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.tooltip-head {
+    font-size: 20px
+}
+
+.flex-row-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-space-around {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem 0;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#header .title {
+    display: flex;
+    align-items:flex-end;
+}
+
+#header h1 {
+    cursor: pointer;
+}
+
+#nav {
+    display: flex;
+    gap: 3rem;
+
+    font-size: 20px;
+}
+
+.nav-btn {
+    cursor: pointer;
+}
+
+.nav-btn.active {
+    width: 100%;
+}
+
+.nav-btn:hover {
+    background-color: inherit;
+}
+
+.nav-btn:after {
+    transition: all ease-in-out .2s;
+    background: none repeat scroll 0 0 black;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+}
+
+.nav-btn:hover:after {
+    width: 100%;
+}
+
+.nav-btn input {
+    appearance: none;
+    margin: 0;
+}
+
+#settings img {
+    width: calc(36px + 2rem);
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+#settings .dropdown {
+    background-color: whitesmoke;
+    z-index: 1;
+    padding: 2rem;
+    font-size: 16px;
+}
+
+#settings:hover .dropdown {
+    display: block;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+}
+
+#controls div {
+    position:relative;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+#content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 5rem;
+    padding: 3rem;
+}
+
+#summaries {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.summary-box {
+    width: 250px;
+    padding: 3rem;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.summary-box span {
+    font-size: 16px;
+}
+
+#time-series {
+    width: calc(750px + 6rem);
+    padding: 3rem;
+
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    width: 45vw;
+    height: 50vh;
+
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#table {
+    width: 40vw;
+    z-index: 0;
+}
+
+#location {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+#find {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#location-details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 7rem 0 6rem;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#location-details .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#location-details h1 {
+    min-width: 500px;
+    text-align: center;
+    padding: 2rem;
+}
+
+#location-overview {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#tp {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
